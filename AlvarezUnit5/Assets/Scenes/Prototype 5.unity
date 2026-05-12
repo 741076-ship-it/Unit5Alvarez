@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fed30dd5f65a0d46872a72295227b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1841350234}
   targets:
   - {fileID: 2772740870134416045, guid: e566358e0edb50e48bfc5a305d2f9afa, type: 3}
   - {fileID: 8059176780801109141, guid: 78422588c4ab3c147a67a11ab09efbfb, type: 3}
