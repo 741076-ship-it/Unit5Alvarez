@@ -10,6 +10,9 @@ public class Target : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -6;
 
+    public int pointValue;
+    public ParticleSystem explotionParticle;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,7 +50,8 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
-        gameManager.UpdateScore(5);
+        Instantiate(explotionParticle, transform.position,explotionParticle.transform.rotation);
+        gameManager.UpdateScore(pointValue);
     }
 
     private void OnTriggerEnter(Collider other)
